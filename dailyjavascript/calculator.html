@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+</head>
+<body>
+    <script>
+//Calculator object that exposes methods to area and volume
+    let calculator = {
+    areaofparallelogram()
+    {
+        return this.breadth * this.heigth;
+
+    },
+
+    volumeofcylinder()
+    {
+        return Math.PI * this.radius * this.radius *this.height;
+    },
+
+    areaofrectangle()
+    {
+        return this.length * this.width;
+    },
+    read()
+    {
+        //prompting the user to input values of each parameter
+        this.breadth = +prompt('breadth?', 0);
+        this.heigth = +prompt('heigth?', 0);
+        this.radius = +prompt('radius?', 0);
+        this.height = +prompt('height?', 0);
+        this.length = +prompt('length?', 0);
+        this.width = +prompt('width?', 0);
+    
+    }
+};
+
+//calculator result
+calculator.read();
+alert(calculator.areaofparallelogram(). toFixed(2) );
+alert(calculator.volumeofcylinder() );
+alert(calculator.areaofrectangle() );
+    
+    
+    </script>
+</body>
+</html>
